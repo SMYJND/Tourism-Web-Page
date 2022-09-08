@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@300&family=Pushster&family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  display: block;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background: #22223b;
+}
+
+
+.logo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  top: 4%;
+  left: 3%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #184e77;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  border: 0.5px solid white;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.nav-links ul li a span {
+  width: 0;
+  height: 100%;
+  background-color: #ef476f;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover span {
+  width: 100%;
+}
+
+.nav-links ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.whattodo {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background: #fae1dd;
+}
+.box{
+  max-width: 1000em;
+  width: 100%;
+  background: #bbbbbb;
+  border: 5px solid #777777;
+  padding: 15px 150px 15px 150px ;
+  border-radius: 5px;
+  margin-top: 20px;
+
+
+}
+h1{
+  width: 90%;
+  color: #ef476f;
+  font-size: x-large;
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+input{
+  text-align: center;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+#button1{
+  width: 50%;
+  color: white;
+  font-size: 15px;
+  opacity: .7;
+  background-color: #e91163;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 50px
+}
+#button2{
+  width: 50%;
+  color: white;
+  font-size: 15px;
+  opacity: .7;
+  background-color: #e91163;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 50px;
+
+}
+.button3{
+  width: 20%;
+  color: white;
+  font-size: 15px;
+  opacity: .7;
+  background-color: #22223b;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-bottom: 5px;
+
+}
+
+
+
+/*footer*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1300px;
+  background-color: #22223b;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #22223b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91163;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col h4 a {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}

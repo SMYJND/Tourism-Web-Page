@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@300&family=Pushster&family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("Images/Ohiya 2.jfif");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: block;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background: #22223b;
+}
+
+.logo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  top: 4%;
+  left: 3%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #184e77;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  border: 0.5px solid white;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.nav-links ul li a span {
+  width: 0%;
+  height: 100%;
+  background-color: #ef476f;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover span {
+  width: 100%;
+}
+
+.nav-links ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.heading {
+  width: 90%;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading h1 {
+  font-size: 100px;
+  font-family: "Courgette", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.heading p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #184e77;
+}
+.heading a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.heading a:hover {
+  border: 1px solid #22223b;
+  background: #22223b;
+  transition: 1s;
+}
+
+.lanka {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Courgette", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  top: 50%;
+  line-height: 1.8;
+}
+.lanka p {
+  flex-basis: 31%;
+  background: #feeae5;
+  border-radius: 10px;
+  padding: 60px 30px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.lanka p:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*Gallery*/
+.title-text {
+  text-align: center;
+}
+
+.title-text p {
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #457b9d;
+  line-height: 8em;
+}
+
+.title-text h1 {
+  font-size: 50px;
+  line-height: 4em;
+}
+
+.card1 {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "status";
+  width: 250px;
+  height: 220px;
+  background: #ef476f;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+  color: #fff;
+}
+.card-status {
+  grid-area: status;
+}
+.card-img1 {
+  grid-area: image;
+  background: url("Images/nilaweli 3.jpg");
+  background-size: cover;
+}
+.card2 {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "status";
+  width: 250px;
+  height: 220px;
+  background: #ef476f;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: -360px;
+}
+.card-img2 {
+  grid-area: image;
+  background: url("Images/Belilena 1.JPG");
+  background-size: cover;
+}
+
+.card3 {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "status";
+  width: 250px;
+  height: 220px;
+  background: #ef476f;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: -360px;
+}
+.card-img3 {
+  grid-area: image;
+  background: url("Images/Ohiya 2.jfif");
+  background-size: cover;
+}
+
+.card4 {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "status";
+  width: 250px;
+  height: 220px;
+  background: #ef476f;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.card-img4 {
+  grid-area: image;
+  background: url("Images/Anuradha pura isurumuniya 4.jpg");
+  background-size: cover;
+}
+.card5 {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "status";
+  width: 250px;
+  height: 220px;
+  background: #ef476f;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: -360px;
+}
+.card-img5 {
+  grid-area: image;
+  background: url("Images/Nallur_Kandasamy_front_entrance 3.jpg");
+  background-size: cover;
+}
+
+.card6 {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "status";
+  width: 250px;
+  height: 220px;
+  background: #ef476f;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: -360px;
+}
+.card-img6 {
+  grid-area: image;
+  background: url("Images/margarita-village-kite-school-kalpitiya-hotel-24272012.jpg");
+  background-size: cover;
+}
+/* footer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1300px;
+  background-color: #22223b;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #22223b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91163;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col h4 a {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}

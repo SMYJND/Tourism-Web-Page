@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@300&family=Pushster&family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: block;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background: #22223b;
+}
+
+.logo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  top: 4%;
+  left: 3%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li ::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #184e77;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  border: 0.5px solid white;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.nav-links ul li a span {
+  width: 0%;
+  height: 100%;
+  background-color: #ef476f;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover span {
+  width: 100%;
+}
+
+.nav-links ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.heading {
+  width: 90%;
+  color: #ef476f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(Images/wheretogojpg.jfif);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.title h1 {
+  font-size: 80px;
+  font-family: "Courgette", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2em;
+}
+.title p {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+  text-align: center;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+
+.col {
+  width: 25%;
+  padding: 0 15px;
+}
+.col h4 {
+  font-size: 18px;
+  color: #ef476f;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91163;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  color: #24262b;
+  display: block;
+  transition: all 0.3s ease;
+}
+.col ul li a:hover {
+  color: #bbbbbb;
+  padding-left: 8px;
+}
+
+/*body*/
+
+.destinations {
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.destinations .imgbox {
+  width: 150px;
+  flex: 0 0 200px;
+}
+.destinations .imgbox img {
+  max-width: 100%;
+}
+.destinations .description {
+  padding-left: 20px;
+}
+.destinations .description h2 {
+  margin: 0;
+  padding-left: 0;
+  color: #e91163;
+  font-size: 22px;
+}
+
+.destinations .description p {
+  margin: 0;
+  padding: 10px 0 0;
+}
+/*footer*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1300px;
+  background-color: #22223b;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #22223b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91163;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col h4 a {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
